@@ -1,0 +1,81 @@
+:root {
+    --fondo: #8EACCD;
+    --fuente: 'Roboto', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*Reset para REMS - 62.5% = 10px de 16px*/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+    font-family: var(--fuente);
+}
+.card {
+    background-color: #fff;
+    width: 40rem;
+    padding: 1.2rem 0;
+    -webkit-box-shadow: 4px 2px 9px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 9px -1px rgba(0,0,0,0.75);
+    box-shadow: 4px 2px 9px -1px rgba(0,0,0,0.75);
+    border-radius: 1.2rem;
+}
+.contenedor {
+    max-width: 100rem;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente);
+    margin-top: 1rem;
+}
+input{
+    border-radius: 1rem;
+    border: 1px solid rgb(61, 60, 60);
+    padding: .3rem 2rem;
+    margin-top: .5rem;
+}
+label {
+    text-align: center;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.campo input {
+    width: 20rem;
+}
+.centrar-texto {
+    text-align: center;
+}
+.boton-enviar {
+    border-radius: 0;
+    background-color: rgb(30, 194, 30);
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: .8rem;
+}
+.boton-enviar:hover {
+    background-color: rgb(4, 102, 4);
+    color: rgb(248, 248, 248);
+}
